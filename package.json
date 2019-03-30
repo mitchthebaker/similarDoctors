@@ -4,10 +4,15 @@
   "description": "Similar Doctors is a web application displaying doctors with various backgrounds to the user",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchthebaker/similarDoctors.git"
   },
   "keywords": [
-    "git",
+    "node",
     "express",
     "heroku"
   ],
@@ -15,6 +20,8 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10",
+    "path": "^0.12.7"
   }
 }
