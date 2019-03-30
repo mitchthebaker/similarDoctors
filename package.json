@@ -1,0 +1,16 @@
+{
+  "name": "similardoctors",
+  "version": "1.0.0",
+  "description": "Similar Doctors is a web application displaying doctors with various backgrounds to the user",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "express",
+    "heroku"
+  ],
+  "author": "Mitchel Richard Padron Baker",
+  "license": "ISC"
+}
