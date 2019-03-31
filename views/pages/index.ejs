@@ -5,6 +5,7 @@
         <title> Similar Doctors </title>
         <link type="text/css" rel="stylesheet" href="/stylesheets/index.css"/>
         <script type="module" src="/list/displayDoctors.js" async></script>
+        <script type="module" src="/list/narrowChoices.js" async></script>
         <script type="module" src="/data/doctorData.js" async></script>
     </head>
     <body>
@@ -24,33 +25,35 @@
                 <div class="dropdown">
                     <button class="dropbtn"> Specialty </button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <button id="drop1-choice1"> Psychiatrist </button>
+                        <button id="drop1-choice2"> Psychologist </button>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn"> Area </button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <button id="drop2-choice1"> San Francisco </button>
+                        <button id="drop2-choice2"> Seattle </button>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn"> Score </button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <button id="drop3-choice1"> 5 (Maximum) </button>
+                        <button id="drop3-choice2"> 4 </button>
+                        <button id="drop3-choice3"> 3 </button>
+                        <button id="drop3-choice4"> 2 </button>
+                        <button id="drop3-choice5"> 1 (Minimum) </button>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn"> Experience </button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <button id="drop4-choice1"> Less than 5 years </button>
+                        <button id="drop4-choice2"> 5-10 years </button>
+                        <button id="drop4-choice3"> 10-15 years </button>
+                        <button id="drop4-choice4"> 15-20 years </button>
+                        <button id="drop4-choice5"> 20+ years </button>
                     </div>
                 </div>
             </section>
