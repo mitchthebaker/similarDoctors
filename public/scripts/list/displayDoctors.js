@@ -1,4 +1,4 @@
-import doctorData from "../data/doctorData";
+import doctorData from "../data/doctorData.js";
 
 let data = doctorData;
-console.log(data);
+console.log(data[0].name);
