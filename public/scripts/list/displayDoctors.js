@@ -28,7 +28,6 @@ for(let i = 0; i < data.length; i++) {
     element.listDoctors.appendChild(doctorDiv);
 }
 
-export default element;
 
 
 
