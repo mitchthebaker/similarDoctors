@@ -30,15 +30,34 @@ const updateDoctorInfo = function() {
                 element.overlay_inner.removeChild(element.overlay_inner.firstChild);
             }
 
-
             let doctor = data[element.doctorDivsArray().indexOf(el)]
             let doctorDiv = document.createElement('div');
 
-            doctorDiv.innerHTML = "<h3 class='doctorDiv-innerh3'>" + doctor.name + "</h3>" +
-                                  "<h4 class='doctorDiv-innerh4'>" + "Profession: " + doctor.profession + "</h4>" +
-                                  "<h4 class='doctorDiv-innerh4'>" + "Area: " + doctor.area + "</h4>" +
-                                  "<h4 class='doctorDiv-innerh4'>" + "Experience: " + doctor.experience + "</h4>" +
-                                  "<h4 class='doctorDiv-innerh4'>" + "Score: " + doctor.score + "</h4>";
+            //Create the inner element for displaying related doctors
+            let relatedDoctors = [];
+            data.forEach(function(element) {
+                if(element.score === 5) {
+                    relatedDoctors.push(element);
+                }
+            });
+
+            doctorDiv.innerHTML = "<div class='currentDoctor'>" +
+                                    "<h3 class='doctorDiv-innerh3'>" + doctor.name + "</h3>" +
+                                    "<h4 class='doctorDiv-innerh4'>" + "Profession: " + doctor.profession + "</h4>" +
+                                    "<h4 class='doctorDiv-innerh4'>" + "Area: " + doctor.area + "</h4>" +
+                                    "<h4 class='doctorDiv-innerh4'>" + "Experience: " + doctor.experience + "</h4>" +
+                                    "<h4 class='doctorDiv-innerh4'>" + "Score: " + doctor.score + "</h4>" +
+                                  "</div>" +
+                                  "<div class='relatedDoctors'>" +
+                                    "<h3 class='doctorDiv-innerh3'>" + relatedDoctors[0].name + "</h3>" +
+                                    "<h4 class='doctorDiv-innerh4'>" + "Score: " + relatedDoctors[0].score + "</h4>" +
+                                    "<h3 class='doctorDiv-innerh3'>" + relatedDoctors[1].name + "</h3>" +
+                                    "<h4 class='doctorDiv-innerh4'>" + "Score: " + relatedDoctors[1].score + "</h4>" +
+                                    "<h3 class='doctorDiv-innerh3'>" + relatedDoctors[2].name + "</h3>" +
+                                    "<h4 class='doctorDiv-innerh4'>" + "Score: " + relatedDoctors[2].score + "</h4>" +
+                                    "<h3 class='doctorDiv-innerh3'>" + relatedDoctors[3].name + "</h3>" +
+                                    "<h4 class='doctorDiv-innerh4'>" + "Score: " + relatedDoctors[3].score + "</h4>" +
+                                  "</div>";
             doctorDiv.setAttribute('class', 'doctorDiv-overlay');
             element.overlay_inner.appendChild(doctorDiv);
         });

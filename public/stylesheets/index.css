@@ -129,11 +129,34 @@ main {
 }
 
 .doctorDiv-overlay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
     width: 90%;
     height: 500px;
     background-color: white;
     border: 1px solid black;
     border-radius: 2px;
+}
+
+.currentDoctor {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+    width: 60%;
+}
+
+.relatedDoctors {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+    width: 40%;
 }
 
 .doctorDiv-innerh3 {
