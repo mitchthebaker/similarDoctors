@@ -128,8 +128,59 @@ main {
     cursor: pointer;
 }
 
+.doctorDiv-overlay {
+    width: 90%;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
 .doctorDiv-innerh3 {
     font-family: 'Dosis', 'Montserrat', sans-serif;
     font-size: 24px;
+}
 
+.overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.5);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: linear 0.4s;
+}
+
+.overlay-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.doctorDiv-innerh3, .doctorDiv-innerh4 {
+    margin: 15px;
+}
+
+.showOverlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.closeOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Dosis', 'Montserrat', sans-serif;
+    border: 0;
 }

@@ -1,3 +1,8 @@
+/* 'doctorData' is the main dataset being used for this application.
+ *
+ * The main assumption made here is that all of the doctor's data is already
+ * recorded. In reality, this would be a much more lengthy process.
+ */
 let doctorData = [
     {
         name:  "Silvester Valpuri",
